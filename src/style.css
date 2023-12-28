@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'count';
+    src: url('../public/boldFont.otf');
+}
+
+@font-face {
+    font-family: 'head';
+    src: url('../public/headItalic.ttf');
+}
+
+@font-face {
+    font-family: 'thin';
+    src: url('../public/Gracheva.otf');
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right top, #000000, #030303, #070707, #0a0a0a, #0d0d0d, #161616, #1d1c1d, #242324, #333132, #434041, #534f50, #645f5f) fixed;
+}
+
+h1,p{
+    color: white;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    margin-top: 30px;
+  }
+
+.card-para{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.card{
+    border: 4px solid;
+    background-color: transparent;
+    border: 1px solid #9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+img{
+    width: 250px;
+    height: 444px;
+    border: 1px solid #9ecaed;
+    margin: 10px;
+
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-items{
+    display: flex;
+}
+
+.countings{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.count{
+    font-family: 'thin';
+    color: #9ecaed;
+}
+
+.head{
+    margin-top: 40px;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'head';
+    font-weight: 100;
+    text-shadow: 0 0 10px #9ecaed, 0 0 20px #9ecaed, 0 0 30px #9ecaed, 0 0 40px #9ecaed, 0 0 50px #9ecaed, 0 0 60px #9ecaed, 0 0 70px #9ecaed;
+}
+
+.theme{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'thin';
+    font-weight: 900;
+    font-size: 40px;
+    color: #9ecaed;
+}
+
+.card-para{
+    color: #9ecaed;
+}
